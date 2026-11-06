@@ -1,0 +1,16 @@
+{
+  "name": "spendwise",
+  "version": "1.0.0",
+  "description": "SpendWise - Premium Finance Management Web Application",
+  "scripts": {
+    "start": "npm --prefix backend start",
+    "dev": "npm --prefix backend run dev"
+  },
+  "keywords": [
+    "fintech",
+    "expense-tracker",
+    "spendwise"
+  ],
+  "author": "SpendWise",
+  "license": "ISC"
+}
