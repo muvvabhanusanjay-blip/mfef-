@@ -1,0 +1,399 @@
+/* ==========================================================================
+   SPENDWISE - PAGES STYLES (TRANSACTIONS, BUDGETS, GOALS, ANALYTICS, SETTINGS)
+   ========================================================================== */
+
+/* Page Header & Actions Bar */
+.page-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.page-title-group h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.page-title-group p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+/* Toolbar Controls */
+.toolbar-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.toolbar-left, .toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 260px;
+}
+
+.search-input-wrap svg {
+  position: absolute;
+  left: 12px;
+  color: var(--text-muted);
+}
+
+.search-input-wrap input {
+  padding-left: 38px;
+}
+
+.filter-select {
+  padding: 10px 14px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-select:focus {
+  border-color: var(--border-focus);
+}
+
+/* --------------------------------------------------------------------------
+   DATA TABLE SYSTEM
+   -------------------------------------------------------------------------- */
+.table-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.spendwise-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.spendwise-table th {
+  padding: 14px 20px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.spendwise-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.spendwise-table tbody tr {
+  transition: background-color var(--transition-fast);
+}
+
+.spendwise-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.action-buttons-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background: none;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-icon:hover {
+  background-color: var(--bg-card-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.btn-icon-danger:hover {
+  background-color: rgba(255, 91, 115, 0.15);
+  color: var(--color-expense);
+  border-color: rgba(255, 91, 115, 0.3);
+}
+
+/* Pagination bar */
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   BUDGETS GRID
+   -------------------------------------------------------------------------- */
+.budgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.budget-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.budget-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.budget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.budget-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.budget-cat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-card-secondary);
+  color: var(--accent-primary);
+}
+
+.budget-cat-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.budget-amounts-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.budget-spent-big {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.budget-limit-sub {
+  color: var(--text-secondary);
+}
+
+.budget-warning-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  background-color: rgba(255, 91, 115, 0.15);
+  color: var(--color-expense);
+  border: 1px solid rgba(255, 91, 115, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   SAVINGS GOALS GRID
+   -------------------------------------------------------------------------- */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.goal-card-full {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-fast);
+}
+
+.goal-card-full:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 230, 160, 0.25);
+}
+
+.goal-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.goal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.goal-target-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.goal-pct-pill {
+  padding: 4px 10px;
+  background-color: var(--accent-light);
+  border: 1px solid rgba(0, 230, 160, 0.3);
+  color: var(--accent-primary);
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.goal-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   SETTINGS PAGE
+   -------------------------------------------------------------------------- */
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.settings-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE MEDIA QUERIES (PHASE 11)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .summary-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  .sidebar-backdrop.mobile-open {
+    display: block;
+  }
+  .sidebar-close-btn {
+    display: block;
+  }
+  .main-wrapper {
+    margin-left: 0;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+  .top-header {
+    padding: 0 16px;
+  }
+  .dashboard-content {
+    padding: 18px 14px;
+    gap: 18px;
+  }
+  .summary-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .period-selector {
+    display: none; /* Hide on small mobile or place in toolbar */
+  }
+  .user-name-snippet {
+    display: none;
+  }
+}
