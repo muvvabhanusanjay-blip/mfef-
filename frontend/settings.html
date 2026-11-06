@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings – SpendWise</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div class="app-container">
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <a href="dashboard.html" class="sidebar-logo">
+          <div class="sidebar-logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <span>SpendWise</span>
+        </a>
+        <button id="sidebar-close" class="sidebar-close-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="analytics.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <span>Analytics</span>
+        </a>
+        <a href="dashboard.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+          <span>Cards</span>
+        </a>
+        <a href="transactions.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <span>Transactions</span>
+        </a>
+        <a href="budgets.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+          </svg>
+          <span>Budgets</span>
+        </a>
+        <a href="goals.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+          <span>Savings Goals</span>
+        </a>
+        <a href="settings.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="logout-btn" class="logout-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          <span>Sign Out</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-wrapper">
+      <header class="top-header">
+        <div class="header-left">
+          <button id="hamburger-btn" class="hamburger-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="header-greeting-wrap">
+            <h2 class="header-greeting">Preferences & Security</h2>
+            <span class="header-date">Manage personal details, currency, and account access</span>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <a href="settings.html" class="user-profile-badge">
+            <div id="user-avatar" class="user-avatar">U</div>
+            <span id="user-name-snippet" class="user-name-snippet">User</span>
+          </a>
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <div class="settings-grid">
+          <!-- CARD 1: USER PROFILE -->
+          <div class="settings-card">
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 6px;">Profile Details</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 24px;">Update display information and display currency</p>
+
+            <form id="profile-form">
+              <div class="form-group">
+                <label class="form-label" for="profile-name">Full Name</label>
+                <input type="text" id="profile-name" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="profile-email">Email Address</label>
+                <input type="email" id="profile-email" class="form-control" disabled style="opacity: 0.7; cursor: not-allowed;">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Email cannot be modified directly</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="profile-currency">Display Currency</label>
+                <select id="profile-currency" class="form-control" style="cursor: pointer;">
+                  <option value="INR">Indian Rupee (₹)</option>
+                  <option value="USD">US Dollar ($)</option>
+                  <option value="EUR">Euro (€)</option>
+                  <option value="GBP">British Pound (£)</option>
+                </select>
+              </div>
+
+              <button type="submit" id="save-profile-btn" class="btn btn-primary" style="margin-top: 10px;">
+                Save Profile Changes
+              </button>
+            </form>
+          </div>
+
+          <!-- CARD 2: PASSWORD CHANGE -->
+          <div class="settings-card">
+            <h3 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 6px;">Password Security</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 24px;">Ensure account protection with a strong password</p>
+
+            <form id="password-form">
+              <div class="form-group">
+                <label class="form-label" for="current-password">Current Password</label>
+                <input type="password" id="current-password" class="form-control" placeholder="••••••••" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="new-password">New Password</label>
+                <input type="password" id="new-password" class="form-control" placeholder="Minimum 6 characters" minlength="6" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="confirm-new-password">Confirm New Password</label>
+                <input type="password" id="confirm-new-password" class="form-control" placeholder="Re-type new password" minlength="6" required>
+              </div>
+
+              <button type="submit" id="change-pwd-btn" class="btn btn-secondary" style="margin-top: 10px;">
+                Update Password
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- THEME & SYSTEM INFO CARD -->
+        <div class="settings-card" style="margin-top: 24px;">
+          <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 16px;">Application Theme & System</h3>
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+            <div>
+              <div style="font-weight: 600;">Theme: Fintech Dark Palette</div>
+              <div style="font-size: 0.82rem; color: var(--text-secondary);">Deep navy (#0B0B19) with mint green (#00E6A0) and coral (#FF5B73)</div>
+            </div>
+            <span class="badge" style="background: rgba(0, 230, 160, 0.15); color: var(--accent-primary); border: 1px solid rgba(0, 230, 160, 0.3); padding: 6px 12px; font-size: 0.82rem;">
+              ● Active System Theme
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="js/settings.js"></script>
+</body>
+</html>

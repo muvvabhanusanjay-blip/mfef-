@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login – SpendWise</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="auth-logo">
+          <div class="auth-logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <span>SpendWise</span>
+        </div>
+        <h1 class="auth-title">Welcome back</h1>
+        <p class="auth-subtitle">Enter your credentials to access your financial dashboard</p>
+      </div>
+
+      <!-- Inline Alert Box -->
+      <div id="auth-alert" class="alert-inline"></div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="email">Email address</label>
+          <div class="input-wrapper">
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-control" 
+              placeholder="you@example.com" 
+              required 
+              autocomplete="email"
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <div class="input-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              class="form-control" 
+              placeholder="••••••••" 
+              required 
+              autocomplete="current-password"
+            >
+            <button type="button" class="toggle-password" data-target="password" title="Show or hide password">
+              <svg class="eye-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="auth-meta">
+          <label class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember">
+            <span>Remember this device</span>
+          </label>
+          <a href="#" class="forgot-password-link" onclick="alert('Please contact your administrator or create a new test account.'); return false;">Forgot password?</a>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+          <span>Sign In to Dashboard</span>
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Don't have an account yet? 
+        <a href="signup.html">Create an account</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
